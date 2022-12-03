@@ -5,9 +5,9 @@ const NavBar = () => {
   return (
     <nav className="container-fluid navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" href="#">
           UFC QXD
-        </a>
+        </Link>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link to="/" className="nav-link">
@@ -28,6 +28,23 @@ const NavBar = () => {
               <li>
                 <Link className="dropdown-item" to="/listStudent">
                   Listar Estudante
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Professor
+            </a>
+            <ul className="dropdown-menu dropdown-menu-light">
+              <li>
+                <Link className="dropdown-item" to="/createProfessor">
+                  Criar Professor
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/listProfessor">
+                  Listar Professor
                 </Link>
               </li>
             </ul>
